@@ -1,0 +1,23 @@
+﻿Imports System.Data
+Partial Class EmployeeSearch
+    Inherits System.Web.UI.Page
+    Dim dt As New DataTable
+    'Protected Sub Page_Load(sender As Object, e As EventArgs) Handles Me.Load
+    '    If Not Page.IsPostBack Then
+    '        Dim NameColumn As New DataColumn("Name", GetType(System.String))
+    '        dt.Columns.Add(NameColumn)
+    '        Dim dr As DataRow
+    '        dr = dt.NewRow()
+    '        dr("Name") = "Gray, Daniel"
+    '        dt.Rows.Add(dr)
+    '        dr = dt.NewRow()
+    '        dr("Name") = "Rodriguez, Chris"
+    '        dt.Rows.Add(dr)
+    '        dr = dt.NewRow()
+    '        dr("Name") = "Yu, Howard"
+    '        dt.Rows.Add(dr)
+    '        rcbEmployees.DataSource = dt
+    '        rcbEmployees.DataBind()
+    '    End If
+    'End Sub
+End Class

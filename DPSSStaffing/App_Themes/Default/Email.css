@@ -1,0 +1,302 @@
+﻿.qsf-demo-canvas {
+     padding: 0px 0px 0px 0px;
+     background: url("images/qsf-demo-canvas-bg.png") 0 0 no-repeat;
+	 text-align: left;
+	 align-content: flex-start;
+}
+ 
+ 
+     .qsf-demo-canvas input {
+          font: 12px "Segoe UI", Helvetica, Arial, sans-serif;
+     }
+ 
+ 
+     /** Form builder */
+     .qsf-demo-canvas .qsf-fb {
+          padding: 10px;
+          border: 1px solid #cccccc;
+          background: #ececec;
+          -moz-box-shadow: 0 0 2px #cccccc;
+          -webkit-box-shadow: 0 0 2px #cccccc;
+          box-shadow: 0 0 2px #cccccc;
+		  text-align: left;
+     }
+ 
+          .qsf-demo-canvas .qsf-fb-group {
+               margin-top: 0px;
+               background: #cccccc;
+          }
+               .qsf-demo-canvas .qsf-fb-group:first-child {
+                    margin-top: 0;
+               }
+ 
+ 
+     /** From / to Fields */
+     .qsf-demo-canvas .qsf-fb-from-to {
+          background-position: 0% 0%;
+	padding: 0px 0px 0px 0px;
+	list-style-type: none;
+	/*background-image: linear-gradient( top, #b1ccad 0%, #9ab396 100% );*/
+	/*background-color: #9ab396;*/
+	background-repeat: repeat;
+	background-attachment: scroll;
+}
+ 
+          .qsf-demo-canvas .qsf-fb-from-to li {
+               /*margin-top: 5px;
+               margin-bottom: 0;
+               min-height: 22px;
+               _height: 22px;
+               line-height: 22px;*/
+          }
+          .qsf-demo-canvas .qsf-fb-from-to li:first-child {
+               margin-top: 0;
+          }
+ 
+ 
+          .qsf-demo-canvas .qsf-fb-from-to .riSingle {
+               vertical-align: top;
+          }
+          .qsf-demo-canvas .qsf-fb-from-to .riTextBox {
+               border: 1px solid #ffffff;
+               vertical-align: top;
+          }
+          .qsf-demo-canvas .qsf-fb-from-to .riTextBox:focus {
+               border: 1px solid #ffffff;
+          }
+          .qsf-demo-canvas .qsf-fb-from-to .riEmpty {
+               color: #888888;
+          }
+ 
+ 
+     /** Attachments */
+     .qsf-demo-canvas .qsf-fb-attachments {
+          padding: 10px;
+     }
+          .qsf-demo-canvas .qsf-fb-attachments strong {
+               width: 70px;
+               padding-left: 15px;
+               background: url("images/qsf-demo-attachment-bg.png") left center no-repeat;
+               line-height: 24px;
+               display: inline-block;
+               vertical-align: bottom;
+          }
+          .qsf-demo-canvas .qsf-fb-attachments .allowed-attachments {
+               margin-left: -350px;
+               color: #888888;
+               line-height: 24px;
+               font-style: italic;
+               display: inline-block;
+               vertical-align: bottom;
+          }
+          .qsf-demo-canvas .qsf-fb-attachments .ruFakeInput {
+               display: none;
+          }
+ 
+          .qsf-demo-canvas .qsf-fb-attachments label {
+               margin-left: 10px;
+               width: auto;
+               font-weight: bold;
+          }
+          .qsf-demo-canvas .qsf-fb-attachments .attachment {
+               margin: 0 5px 5px 0;
+               padding: 0 0 0 20px;
+               background-position: 3px center;
+               background-repeat: no-repeat;
+               display: inline-block;
+          }
+          .qsf-demo-canvas .qsf-fb-attachments .icon-jpg,
+          .qsf-demo-canvas .qsf-fb-attachments .icon-jpeg {
+               background-image: url("images/icon-jpg.png");
+          }
+          .qsf-demo-canvas .qsf-fb-attachments .icon-png {
+               background-image: url("images/icon-png.png");
+          }
+          .qsf-demo-canvas .qsf-fb-attachments .icon-doc,
+          .qsf-demo-canvas .qsf-fb-attachments .icon-docx {
+               background-image: url("images/icon-doc.png");
+          }
+          .qsf-demo-canvas .qsf-fb-attachments .icon-xls,
+          .qsf-demo-canvas .qsf-fb-attachments .icon-xlsx {
+               background-image: url("images/icon-xls.png");
+          }
+ 
+ 
+     /** Message body */
+     .qsf-demo-canvas .qsf-fb-message-body {
+          background: none;
+     }
+ 
+ 
+     /** Buttons */
+     .qsf-demo-canvas .qsf-fb .buttons {
+          position: absolute;
+          top: 20px;
+          left: 20px;
+     }
+          .qsf-demo-canvas .qsf-fb .buttons input {
+               border-style: none;
+	border-color: inherit;
+	border-width: 0;
+	padding: 0;
+	width: 50px;
+               height: 50px;
+               color: #ffffff;
+               background-color: #497b41;
+               background-image: linear-gradient( top, #77ad6f 0%, #497b41 100% );
+               }
+               .qsf-demo-canvas .qsf-fb .buttons input:hover {
+                    background: #497b41;
+                    filter: none;
+               }
+ 
+ 
+ 
+ 
+/** Customize the upload */
+.qsf-demo-canvas .RadUpload {
+     display: inline-block;
+     vertical-align: bottom;
+     *display: inline;
+     *zoom: 1;
+}
+ 
+     .qsf-demo-canvas .RadUpload .ruInputs li {
+          margin: 0;
+     }
+     .qsf-demo-canvas .RadUpload .ruInputs .file-row {
+          margin-bottom: 10px;
+          margin-left: -100px;
+     }
+ 
+     .qsf-demo-canvas .RadUpload .ruBrowse {
+          color: #ffffff;
+          background-color: #497b41;
+          background-image: linear-gradient( top, #77ad6f 0%, #497b41 100% );
+          }
+          .qsf-demo-canvas .RadUpload .ruBrowse.ruButtonHover {
+               color: #ffffff;
+               background: #497b41;
+               filter: none;
+          }
+ 
+ 
+ 
+ 
+/** Customize the editor */
+.qsf-demo-canvas .RadEditor.Qsf {
+}
+ 
+ 
+     .qsf-demo-canvas .RadEditor.Qsf .reToolbarWrapper {
+          padding: 2px;
+          background: #497b41;
+          zoom: 1;
+     }
+          .qsf-demo-canvas .RadEditor.Qsf .reToolbarWrapper:after {
+               content: "";
+               clear: both;
+               display: block;
+          }
+ 
+ 
+     .qsf-demo-canvas .RadEditor.Qsf .reToolbar {
+          margin: 0 2px !important;
+          border-radius: 3px;
+          background-color: #497b41;
+          background-position: 0 0;
+	background-image: linear-gradient( top, #77ad6f 0%, #497b41 100% );
+}
+ 
+ 
+          .qsf-demo-canvas .RadEditor.Qsf .reToolbar .reSeparator {
+               margin: 3px 2px !important;
+               width: 1px;
+               height: 20px;
+               background-color: #9ac594;
+          }
+ 
+ 
+     .qsf-demo-canvas .RadEditor.Qsf .reToolbar .reTool {
+          color: #ffffff;
+          background-position: 0 0;
+     }
+          .qsf-demo-canvas .RadEditor.Qsf .reToolbar .reTool:hover {
+               background-color: #497b41;
+          }
+          .qsf-demo-canvas .RadEditor.Qsf .reToolbar .reTool.reTool_selected {
+               background-color: #2c4d26;
+          }
+ 
+ 
+     .qsf-demo-canvas .RadEditor.Qsf .reToolbar .reTool span {
+          margin: 4px;
+          width: 16px;
+          height: 16px;
+          background: url("images/qsf-demo-editor-sprite.png") 0 0 no-repeat;
+          _background-image: url("images/qsf-demo-editor-sprite.png");
+     }
+     .qsf-demo-canvas .RadEditor.Qsf .reToolbar .reTool .split_arrow {
+          margin-left: 2px;
+          margin-right: 2px;
+          width: 5px;
+          background-position: -181px 0;
+     }
+ 
+          .qsf-demo-canvas .RadEditor.Qsf .reToolbar .reTool .AjaxSpellCheck {
+               background-position: 0 0;
+          }
+          .qsf-demo-canvas .RadEditor.Qsf .reToolbar .reTool .Undo {
+               background-position: -16px 0;
+          }
+          .qsf-demo-canvas .RadEditor.Qsf .reToolbar .reTool .Redo {
+               background-position: -32px 0;
+          }
+          .qsf-demo-canvas .RadEditor.Qsf .reToolbar .reTool .Cut {
+               background-position: -48px 0;
+          }
+          .qsf-demo-canvas .RadEditor.Qsf .reToolbar .reTool .Copy {
+               background-position: -64px 0;
+          }
+          .qsf-demo-canvas .RadEditor.Qsf .reToolbar .reTool .Paste {
+               background-position: -80px 0;
+          }
+          .qsf-demo-canvas .RadEditor.Qsf .reToolbar .reTool .Bold {
+               background-position: -96px 0;
+          }
+          .qsf-demo-canvas .RadEditor.Qsf .reToolbar .reTool .Italic {
+               background-position: -112px 0;
+          }
+          .qsf-demo-canvas .RadEditor.Qsf .reToolbar .reTool .Underline {
+               background-position: -128px 0;
+          }
+          .qsf-demo-canvas .RadEditor.Qsf .reToolbar .reTool .ForeColor {
+               background-position: -144px 0;
+          }
+          .qsf-demo-canvas .RadEditor.Qsf .reToolbar .reTool .BackColor {
+               background-position: -160px 0;
+          }
+ 
+ 
+     .qsf-demo-canvas .RadEditor.Qsf .reToolbar .reDropdown {
+          border: 1px solid #497b41;
+          background: #ffffff url("images/qsf-demo-editor-arrow.png") right center no-repeat;
+     }
+          .qsf-demo-canvas .RadEditor.Qsf .reToolbar .reDropdown:hover {
+               background-color: #f0f0f0;
+          }
+ 
+     .qsf-demo-canvas .RadEditor.Qsf .reAjaxspell_wrapper {
+ 
+     }
+          .qsf-demo-canvas .RadEditor.Qsf .reAjaxspell_wrapper label {
+               width: auto;
+          }
+ 
+.reDropDownBody {
+     border: 1px solid #497b41;
+     background: #ffffff;
+}
+.reItemOver {
+     background: #f0f0f0;
+}

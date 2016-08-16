@@ -1,0 +1,86 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <link href="App_Themes/Default/StyleSheet1.css" rel="stylesheet" />
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <table class="MainTable">
+            <tr>
+                <td >
+                    <table id="HeaderTable" class="MainTable"> 
+                        <tr>
+                            <td style="width: 33%"> 
+                                <div id="header">
+                                    <asp:Image ID="imgBanner" runat="server" ImageUrl="~/images/AppBanner.jpg" />
+                                </div>
+                            </td>
+                            <td style="width: 33%">
+                                <table style="width: 100%">
+                                    <tr>
+                                        <td style="text-align: center">
+                                            <asp:Label ID="lblTitle" runat="server" Text="DPSS Staffing" 
+                                            Font-Bold="True" Font-Size="Medium" ForeColor="Black"></asp:Label>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td style="width: 33%; text-align:right">
+                                <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="RedirectToLoginPage"  />
+                            </td>
+                            </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <telerik:RadMenu ID="mnuMain" runat="server" Width="100%" style="top: 0px; left: 1px" 
+                             Font-Bold="True" Font-Size="Medium" >
+                         <Items>
+                            <telerik:RadMenuItem runat="server" Text="1546 Request Tracking" NavigateUrl="~/1546.aspx">
+                            </telerik:RadMenuItem>
+                            <telerik:RadMenuItem runat="server" Text="TAP Request Tracking" NavigateUrl="~/TAP.aspx">
+                            </telerik:RadMenuItem>
+                            <telerik:RadMenuItem runat="server"  Text="Transfer Tracking" NavigateUrl="~/TransferRequest.aspx">
+                            </telerik:RadMenuItem>
+                            <telerik:RadMenuItem runat="server" Text="Overtime Tracking" NavigateUrl="~/Overtime.aspx">
+                            </telerik:RadMenuItem>
+                            <telerik:RadMenuItem runat="server" Text="Self Sufficiency Staff" Enabled="False">
+                            </telerik:RadMenuItem>
+                             <telerik:RadMenuItem runat="server" Text="Admin">
+                                <Items>
+                                    <telerik:RadMenuItem runat="server" Text="Lookup Tables Maintenance" NavigateUrl="~/Admin/LookupMaintenance.aspx"></telerik:RadMenuItem>
+                                    <telerik:RadMenuItem runat="server" NavigateUrl="~/Admin/OTStaffOfficeAssignment.aspx" Text="Overtime Office Assignment">
+                                    </telerik:RadMenuItem>
+                                    <telerik:RadMenuItem runat="server" NavigateUrl="~/Admin/OvertimeLookupMaintenance.aspx" Text="Overtime Table Maintence">
+                                    </telerik:RadMenuItem>
+                                    <telerik:RadMenuItem runat="server" NavigateUrl="~/Admin/DefaultEmailAdresses.aspx" Text="Email Default Addresses">
+                                    </telerik:RadMenuItem>
+                                </Items>
+                             </telerik:RadMenuItem>
+                        </Items>
+                    </telerik:RadMenu>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 100%; text-align: right">
+                    <telerik:RadSkinManager ID="RadSkinManager1" runat="server" ShowChooser="True" Skin="Office2007" PersistenceMode="Cookie"></telerik:RadSkinManager>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

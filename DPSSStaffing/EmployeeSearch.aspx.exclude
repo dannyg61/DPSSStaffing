@@ -1,0 +1,22 @@
+﻿<%@ Page Language="VB" AutoEventWireup="false" CodeFile="EmployeeSearch.aspx.vb" Inherits="EmployeeSearch" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <telerik:RadScriptManager ID="RadScriptManager1" runat="server"></telerik:RadScriptManager>
+    <telerik:RadAjaxPanel ID="RadAjaxPanel1" runat="server" Height="200px" Width="300px"></telerik:RadAjaxPanel>
+    <div>
+        <telerik:RadComboBox ID="rcbEmployees" runat="server" Width="300px" Height="200px" 
+             EmptyMessage="Type Last Name, First Name" DataSourceID="ObjectDataSource1" DataTextField="NAME" DataValueField="EMPLID" EnableAutomaticLoadOnDemand="True" EnableVirtualScrolling="False" ItemsPerRequest="30" ShowMoreResultsBox="False" Skin="Office2010Black">
+
+        </telerik:RadComboBox>
+        <asp:ObjectDataSource ID="ObjectDataSource1" runat="server" OldValuesParameterFormatString="original_{0}" SelectMethod="GetEmployees" TypeName="StaffEmployees.Employees"></asp:ObjectDataSource>
+    </div>
+    </form>
+</body>
+</html>
